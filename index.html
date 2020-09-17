@@ -37,13 +37,23 @@
     <header class = "jumbotron">
         <div class = "container">
             <div class = "row row-header">
-                <div class = "col-12 col-sm-6">
+				<div class="col-6 col-sm-3 align-self-center">
+					 <img src="img/img/logo.png" class="img-fluid">
+                </div>
+                <div class = "col-6 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-					 <img src="img/img/logo.png" class="img-fluid">
-                </div>
+				
+				<div class="col-12 col-sm-3 align-self-center justify-content-center">
+					<div class = "row">
+						<div class = "offset-3 col-sm-6">
+							<div class="btn" role="group">
+								<a class="btn btn-warning" role="button" href="#reserve"><strong>Reserve Table</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
         </div>
     </header>
@@ -70,9 +80,17 @@
             <div class = "col-12 col-sm-4 col-md-3 order-sm-last">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class = "col col-sm col-md order-sm-first">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class = "col col-sm col-md order-sm-last">
+				
+				<div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet<span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
+                    </div>
+					<img class="d-flex mr-3 img-thumbnail align-self-center" src="img/img/buffet.png" alt="Weekend Grand Buffet">
+                </div>
+				
+                
             </div>
         </div>
 
@@ -95,6 +113,58 @@
                 
             </div>
         </div>
+		
+		<div class = "row row-content align-items-center" id="reserve">
+			<div class="col-sm">
+				<div class="card">
+                    <h3 class="card-header bg-warning text-white" id = "reserve">Reserve a Table</h3>
+                    <div class="card-body">
+							
+							<dl class="row">
+								
+								<dt class="col-3 mr-1  col-form-label align-self-center my-4">Number of guests:</dt>
+								<dd class="col-1 offset-1 my-4">
+									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
+									<label>1</label>
+								</dd>
+								<dd class="col-1 my-4">
+									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
+									<label>2</label>
+								</dd>
+								<dd class="col-1 my-4">
+									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
+									<label>3</label>
+								</dd>
+								<dd class="col-1 my-4">
+									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
+									<label>4</label>
+								</dd>
+								<dd class="col-1 my-4">
+									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
+									<label>5</label>
+								</dd>
+								<dd class="col-1 my-4">
+									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
+									<label>6</label>
+								</dd>
+								
+								<dt class="col-3 mr-1 my-4  col-form-label">Date and Time:</dt>
+								<dd class="col-3 ofset-1 my-4">
+									<input type="date" class="form-control" id = "date" name="emailid" placeholder="Date">
+								</dd>
+								<dd class="col-3 ofset-1 my-4">
+									<input type="time" class="form-control" id = "time" name="time" placeholder="Time">
+								</dd>
+								
+								<div class="offset-sm-3 col-md-10 justify-content-center my-4">
+									<button type="submit" class="btn btn-primary">Reserve</button>
+								</div>
+							</dl>
+						
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
 
     <footer class = "footer">
