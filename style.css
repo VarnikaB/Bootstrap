@@ -41,6 +41,13 @@ body
 	z-index: 0;
 }
 
+.tab-content
+{
+	border-left: 1px solid #3bada3;
+	border-bottom: 1px solid #3bada3;
+	border-right: 1px solid #3bada3;
+}
+
 .navbar-dark
 {
 	background-color: #512DAB;
