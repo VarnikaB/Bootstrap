@@ -90,8 +90,8 @@
 					<div class = "row">
 						<div class = "offset-3 col-sm-6">
 							<div class="btn" role="group">
-								<a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true"  title="Or Call us at <br><strong>+852 12345678</strong>"
-                        		data-placement="bottom" href="#reserveform">Reserve Table</a>
+								<a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#reserve">Reserve Table</a>
+								
 							</div>
 						</div>
 					</div>
@@ -99,8 +99,129 @@
             </div>
         </div>
     </header>
+	
+	<div id="reserve" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+						<dl class="row">
+								
+								<dt class="col-3 mr-1  col-form-label align-self-center">Number of guests:</dt>
+								<dd class="col-1">
+									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
+									<label>1</label>
+								</dd>
+								<dd class="col-1 ">
+									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
+									<label>2</label>
+								</dd>
+								<dd class="col-1 ">
+									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
+									<label>3</label>
+								</dd>
+								<dd class="col-1 ">
+									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
+									<label>4</label>
+								</dd>
+								<dd class="col-1 ">
+									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
+									<label>5</label>
+								</dd>
+								<dd class="col-1 ">
+									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
+									<label>6</label>
+								</dd>
+								
+								<dt class="col-3 col-form-label">Section:</dt>
+								<dd class="col">
+									<div class="row">
+										<div class="col-sm-3 ">
+											<button type="radio" class="btn btn-danger" data-backdrop="static" data-keyboard="false">Non-Smoking</button>
+										</div>								
+										<div class=" col-sm-5 ">
+											<button type="radio" class="btn btn-success" data-backdrop="static" data-keyboard="false">Smoking</button>
+										</div>
+									</div>
+								</dd>	
+								<div class="row">
+									<dt class="offset-1 col-3 col-form-label">Date and Time:</dt>
+									<dd class="col-4 ">
+										<input type="date" class="form-control" id = "date" name="emailid" placeholder="Date">
+									</dd>
+									<dd class="col-4">
+										<input type="time" class="form-control" id = "time" name="time" placeholder="Time">
+									</dd>
+							</div>
+						</dl>
+						<div class="row">
+									<div class="offset-sm-3 col-sm-3 justify-content-center">
+										<button type="submit" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+									</div>								
+									<div class=" col-sm-5 justify-content-center">
+										<button type="submit" class="btn btn-dark">Reserve</button>
+									</div>
+						</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+	
 
     <div class = "container">
+		
+		<div class="row row-content">
+           <div class="col">
+			   <div id="mycarousel" class="carousel slide" data-ride="carousel">
+				   <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="img/img/uthappizza.png" alt="Uthappizza">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$4.99</span></h2>
+                                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                            </div>
+                        </div>
+					   
+                        <div class="carousel-item">
+							<img class="d-block img-fluid" src="img/img/buffet.png" alt="Weekend Grand Buffet">
+							<div class="carousel-caption d-none d-md-block">
+								<h2>Weekend Grand Buffet<span class="badge badge-danger">NEW</span></h2>
+								<p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+							</div>
+                        </div>
+					   
+                        <div class="carousel-item">
+							<img class="d-block img-fluid" src="img/img/alberto.png" alt="Meet our Culinary Specialists">
+							<div class="carousel-caption d-none d-md-block">
+								<h2>Meet our Culinary Specialists<span class="badge badge-danger">NEW</span></h2>
+								<p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.</p>
+							</div>
+                        </div>
+					   
+					    
+                    </div>
+               </div>
+			   <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0"  class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"  ></li>
+                        <li data-target="#mycarousel" data-slide-to="2"  ></li>
+               </ol>
+			   <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+               </a>
+               <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+               </a>
+			   
+            </div>
+       </div>
+		
         <div class = "row row-content align-items-center">
             <div class = "col-12 col-sm-4 col-md-3 order-sm-first" >
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -116,7 +237,6 @@
                 
             </div>
         </div>
-
 
         <div class = "row row-content align-items-center">
             <div class = "col-12 col-sm-4 col-md-3 order-sm-last">
@@ -156,57 +276,7 @@
             </div>
         </div>
 		
-		<div class = "row row-content align-items-center" id="reserve">
-			<div class="col-sm">
-				<div class="card">
-                    <h3 class="card-header bg-warning text-white" id = "reserve">Reserve a Table</h3>
-                    <div class="card-body">
-							
-							<dl class="row">
-								
-								<dt class="col-3 mr-1  col-form-label align-self-center my-4">Number of guests:</dt>
-								<dd class="col-1 offset-1 my-4">
-									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
-									<label>1</label>
-								</dd>
-								<dd class="col-1 my-4">
-									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
-									<label>2</label>
-								</dd>
-								<dd class="col-1 my-4">
-									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
-									<label>3</label>
-								</dd>
-								<dd class="col-1 my-4">
-									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
-									<label>4</label>
-								</dd>
-								<dd class="col-1 my-4">
-									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
-									<label>5</label>
-								</dd>
-								<dd class="col-1 my-4">
-									<input type = "radio" class="form-check-input" name="approve" id="approve" value="">
-									<label>6</label>
-								</dd>
-								
-								<dt class="col-3 mr-1 my-4  col-form-label">Date and Time:</dt>
-								<dd class="col-3 ofset-1 my-4">
-									<input type="date" class="form-control" id = "date" name="emailid" placeholder="Date">
-								</dd>
-								<dd class="col-3 ofset-1 my-4">
-									<input type="time" class="form-control" id = "time" name="time" placeholder="Time">
-								</dd>
-								
-								<div class="offset-sm-3 col-md-10 justify-content-center my-4">
-									<button type="submit" class="btn btn-primary">Reserve</button>
-								</div>
-							</dl>
-						
-					</div>
-				</div>
-			</div>
-		</div>
+		
     </div>
 
     <footer class = "footer">
@@ -255,11 +325,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!-- This is to activate the html formatting og tooltip-->
-	<script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+	
 </body>
 
 </html>
